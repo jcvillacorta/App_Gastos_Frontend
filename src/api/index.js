@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const login = (email, password) => {
-    return axios.post('http://localhost:5001/api/users/login', {
+    return axios.post('https://appgastosbackend.herokuapp.com/api/users/login', {
     email,
     password
     
@@ -13,7 +13,7 @@ export const login = (email, password) => {
 }
 
 export const logout = (message) => {
-    return axios.post('http://localhost:5001/api/users/logout', {
+    return axios.post('https://appgastosbackend.herokuapp.com/api/users/logout', {
     message
 }, {
     headers: {
@@ -23,7 +23,7 @@ export const logout = (message) => {
 }
 
 export const signUp = ({ name, email, password }) => {
-    return axios.post('http://localhost:5001/api/users', {
+    return axios.post('https://appgastosbackend.herokuapp.com/api/users', {
       name,
       email,
       password
@@ -35,7 +35,7 @@ export const signUp = ({ name, email, password }) => {
   }
 
 export const fetchAmount = (token) => {
-    return axios.get('http://localhost:5001/api/numbers', {
+    return axios.get('https://appgastosbackend.herokuapp.com/api/numbers', {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/x-www-form/urlencoded'
@@ -44,7 +44,7 @@ export const fetchAmount = (token) => {
 }
 
 export const createAmount = (text, amount, token) => {
-    return axios.post('http://localhost:5001/api/numbers', {
+    return axios.post('https://appgastosbackend.herokuapp.com/api/numbers', {
         text,
         amount
     }, 
@@ -57,7 +57,7 @@ export const createAmount = (text, amount, token) => {
 }
 
 export const deleteAmount = (id, token) => {
-    return axios.delete(`http://localhost:5001/api/numbers/${id}`,
+    return axios.delete(`https://appgastosbackend.herokuapp.com/api/numbers/${id}`,
     {
         headers: {
             'Authorization': `Bearer ${token}`,
