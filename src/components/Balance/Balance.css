@@ -1,0 +1,14 @@
+.balance {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+    text-align: left;
+    color: white;
+  }
+
+.balance-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

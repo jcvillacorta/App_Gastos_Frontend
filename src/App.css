@@ -1,0 +1,13 @@
+.app {
+  text-align: center;
+}
+
+.app-header {
+  background-color: #394865;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem 4rem 1rem;
+}

@@ -1,0 +1,36 @@
+.amount-list {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+h2 {
+  color:white;
+}
+
+.amount-input__container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 500px;
+}
+  
+.amount-input__btn {
+    background-color: #0984e3;
+}
+  
+.amount-input__btn:hover {
+    background-color: #74b9ff;
+}
+  
+.amount-input__btn:active {
+    background-color: #00b894;
+}
+
+.historial-input__container {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+}
