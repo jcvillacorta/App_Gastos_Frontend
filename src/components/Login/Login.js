@@ -27,6 +27,7 @@ function Login (props) {
 
     return (
     <div>
+      <h1 style={{ color: 'white' }}>💰 - App de Gastos - 💰</h1>
       <h2 style={{ color: 'white' }}>Iniciar sesión</h2>
       <div className='auth-view__input-container'>
         <TextInput 
